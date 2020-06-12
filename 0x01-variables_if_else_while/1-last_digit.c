@@ -3,7 +3,8 @@
 #include <stdio.h>
 
 /**
-*main - assigns random number to the variable
+*main - prints out a random number and checks if the last digit is greater
+*than 5 or less than 6 but not 0
 *Return: 0
 */
 
