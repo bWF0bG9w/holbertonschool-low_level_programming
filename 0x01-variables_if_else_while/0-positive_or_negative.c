@@ -3,9 +3,9 @@
 #include <time.h>
 
 /**
- *main - prints if a random number is positive or negative
- *Return: 0
- */
+*main - prints if a random number is positive or negative
+*Return: 0
+*/
 
 int main(void)
 {
