@@ -1,5 +1,10 @@
 #include <uunistd.h>
 
+/**
+ *main - prints the alphabet in lowercase and then in uppercase
+ *Return: 0
+ */
+
 int _putchar(char a)
 {
 	return (write(1, &c, 1));
