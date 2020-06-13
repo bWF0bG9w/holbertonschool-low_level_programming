@@ -1,12 +1,11 @@
 #include <unistd.h>
-#include <stdio.h>
 
 /**
  *main - prints the alphabet in lowercase and then in uppercase
  *Return: 0
  */
 
-int _putchar(char a)
+int _putchar(char c)
 {
 	return (write(1, &c, 1));
 }
@@ -27,6 +26,6 @@ int main(void)
 		_putchar(c);
 		c = c + 1;
 	}
-	write('\n');
+	_putchar('\n');
 	return (0);
 }
