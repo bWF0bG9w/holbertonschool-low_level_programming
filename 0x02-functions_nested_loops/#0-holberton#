@@ -1,0 +1,589 @@
+Last login: Fri Jun 12 18:40:35 on ttys000
+Matthews-MacBook-Pro:~ matthewlopez$ vagrant up
+Bringing machine 'default' up with 'virtualbox' provider...
+==> default: Checking if box 'ubuntu/trusty64' version '20190514.0.0' is up to date...
+==> default: Resuming suspended VM...
+==> default: Booting VM...
+==> default: Waiting for machine to boot. This may take a few minutes...
+    default: SSH address: 127.0.0.1:2222
+    default: SSH username: vagrant
+    default: SSH auth method: private key
+vagrant ssh==> default: Machine booted and ready!
+==> default: Machine already provisioned. Run `vagrant provision` or use the `--provision`
+==> default: flag to force provisioning. Provisioners marked to run always will still run.
+Matthews-MacBook-Pro:~ matthewlopez$ vagrant ssh
+Welcome to Ubuntu 14.04.6 LTS (GNU/Linux 3.13.0-170-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com/
+
+  System information as of Sat Jun 13 00:21:36 UTC 2020
+
+  System load:  0.0               Processes:           74
+  Usage of /:   4.2% of 39.34GB   Users logged in:     0
+  Memory usage: 26%               IP address for eth0: 10.0.2.15
+  Swap usage:   0%
+
+  Graph this data and manage this system at:
+    https://landscape.canonical.com/
+
+New release '16.04.6 LTS' available.
+Run 'do-release-upgrade' to upgrade to it.
+
+
+Last login: Fri Jun 12 23:41:25 2020 from 10.0.2.2
+vagrant@vagrant-ubuntu-trusty-64:~$ ls
+holbertonschool-low_level_programming  holberton-system_engineering-devops
+holbertonschool-zero_day
+vagrant@vagrant-ubuntu-trusty-64:~$ cd holbertonschool-low_level_programming/
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming$ ld
+ld: no input files
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming$ ls
+0x00-hello_world  0x01-variables_if_else_while  Betty  README.md
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming$ cd oxo1
+-bash: cd: oxo1: No such file or directory
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming$ cd 0x01
+-bash: cd: 0x01: No such file or directory
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming$ cd 0x01-variables_if_else_while/
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x01-variables_if_else_while$ ls
+0-positive_or_negative.c  2-print_alphabet.c~  4-print_alphabt.c~   README.md
+10-print_comb2.c          3-print_alphabets.c  #5-print_numbers.c#
+1-last_digit.c            4-print_alphabt.c    a.out
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x01-variables_if_else_while$ emacs 5-print_numbers.c
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x01-variables_if_else_while$ betty 5-print_numbers.c 
+
+========== 5-print_numbers.c ==========
+5-print_numbers.c:11: ERROR: space required before the open parenthesis '('
+total: 1 errors, 0 warnings, 12 lines checked
+main
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x01-variables_if_else_while$ emacs 5-print_numbers.c
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x01-variables_if_else_while$ emacs 5-print_numbers.c
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x01-variables_if_else_while$ betty 5-print_numbers.c 
+
+========== 5-print_numbers.c ==========
+main
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x01-variables_if_else_while$ git add 5-print_numbers.c
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x01-variables_if_else_while$ git commit -m "adding 5"
+[master 5dad7a8] adding 5
+ 1 file changed, 12 insertions(+)
+ create mode 100644 0x01-variables_if_else_while/5-print_numbers.c
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x01-variables_if_else_while$ git push
+Counting objects: 6, done.
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 472 bytes | 0 bytes/s, done.
+Total 4 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/bWF0bG9w/holbertonschool-low_level_programming.git
+   caf4755..5dad7a8  master -> master
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x01-variables_if_else_while$ 
+  [Restored Jun 15, 2020 at 9:08:33 AM]
+Last login: Mon Jun 15 09:08:15 on console
+Matthews-MacBook-Pro:~ matthewlopez$ clear
+
+Matthews-MacBook-Pro:~ matthewlopez$ man cat
+Matthews-MacBook-Pro:~ matthewlopez$ man find
+Matthews-MacBook-Pro:~ matthewlopez$ vagrant up
+Bringing machine 'default' up with 'virtualbox' provider...
+==> default: Checking if box 'ubuntu/trusty64' version '20190514.0.0' is up to date...
+==> default: Clearing any previously set forwarded ports...
+==> default: Clearing any previously set network interfaces...
+==> default: Preparing network interfaces based on configuration...
+    default: Adapter 1: nat
+==> default: Forwarding ports...
+    default: 22 (guest) => 2222 (host) (adapter 1)
+==> default: Booting VM...
+==> default: Waiting for machine to boot. This may take a few minutes...
+    default: SSH address: 127.0.0.1:2222
+    default: SSH username: vagrant
+    default: SSH auth method: private key
+    default: Warning: Connection reset. Retrying...
+==> default: Machine booted and ready!
+==> default: Checking for guest additions in VM...
+    default: The guest additions on this VM do not match the installed version of
+    default: VirtualBox! In most cases this is fine, but in rare cases it can
+    default: prevent things such as shared folders from working properly. If you see
+    default: shared folder errors, please make sure the guest additions within the
+    default: virtual machine match the version of VirtualBox you have installed on
+    default: your host and reload your VM.
+    default: 
+    default: Guest Additions Version: 4.3.40
+    default: VirtualBox Version: 6.1
+==> default: Mounting shared folders...
+    default: /vagrant => /Users/matthewlopez
+==> default: Machine already provisioned. Run `vagrant provision` or use the `--provision`
+==> default: flag to force provisioning. Provisioners marked to run always will still run.
+Matthews-MacBook-Pro:~ matthewlopez$ vagrant ssh
+Welcome to Ubuntu 14.04.6 LTS (GNU/Linux 3.13.0-170-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com/
+
+ System information disabled due to load higher than 1.0
+
+New release '16.04.6 LTS' available.
+Run 'do-release-upgrade' to upgrade to it.
+
+
+Last login: Sat Jun 13 00:22:04 2020 from 10.0.2.2
+vagrant@vagrant-ubuntu-trusty-64:~$ ls
+holbertonschool-low_level_programming  holberton-system_engineering-devops
+holbertonschool-zero_day
+vagrant@vagrant-ubuntu-trusty-64:~$ cd holbertonschool-low_level_programming/
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming$ ls
+0x00-hello_world  0x01-variables_if_else_while  Betty  README.md
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming$ mkdir 0x02-functions_nested_loops
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming$ ls
+0x00-hello_world              0x02-functions_nested_loops  README.md
+0x01-variables_if_else_while  Betty
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming$ cd 0x02-functions_nested_loops/
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x02-functions_nested_loops$ emacs README.md
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x02-functions_nested_loops$ man putchar
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x02-functions_nested_loops$ emacs README.md
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x02-functions_nested_loops$ emacs README.md 
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x02-functions_nested_loops$ rm README.md 
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x02-functions_nested_loops$ ls
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x02-functions_nested_loops$ emacs README.md
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x02-functions_nested_loops$ emacs 0-holberton.c
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x02-functions_nested_loops$ betty 0-holberton.c 
+
+========== 0-holberton.c ==========
+0-holberton.c:14: ERROR: spaces required around that ':' (ctx:VxV)
+0-holberton.c:14: ERROR: parentheses are required on a return statement
+total: 2 errors, 0 warnings, 15 lines checked
+main
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x02-functions_nested_loops$ emacs 0-holberton.c
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x02-functions_nested_loops$ ls
+0-holberton.c  0-holberton.c~  README.md
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x02-functions_nested_loops$ betty 0-holberton.c 
+
+========== 0-holberton.c ==========
+0-holberton.c:15: ERROR: spaces required around that ':' (ctx:VxV)
+0-holberton.c:15: ERROR: parentheses are required on a return statement
+total: 2 errors, 0 warnings, 16 lines checked
+main
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x02-functions_nested_loops$ emacs 0-holberton.c
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x02-functions_nested_loops$ betty 0-holberton.c 
+
+========== 0-holberton.c ==========
+0-holberton.c:14: ERROR: code indent should use tabs where possible
+0-holberton.c:14: WARNING: please, no space before tabs
+0-holberton.c:14: WARNING: please, no spaces at the start of a line
+0-holberton.c:16: ERROR: spaces required around that ':' (ctx:VxW)
+0-holberton.c:16: ERROR: parentheses are required on a return statement
+total: 3 errors, 2 warnings, 17 lines checked
+main
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x02-functions_nested_loops$ emacs 0-holberton.c
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x02-functions_nested_loops$ betty 0-holberton.c 
+
+========== 0-holberton.c ==========
+0-holberton.c:14: ERROR: code indent should use tabs where possible
+0-holberton.c:14: WARNING: please, no space before tabs
+0-holberton.c:14: WARNING: please, no spaces at the start of a line
+0-holberton.c:15: ERROR: spaces required around that ':' (ctx:VxW)
+0-holberton.c:15: ERROR: parentheses are required on a return statement
+total: 3 errors, 2 warnings, 16 lines checked
+main
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x02-functions_nested_loops$ emacs 0-holberton.c
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x02-functions_nested_loops$ ^C
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x02-functions_nested_loops$ emacs 0-holberton.c
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x02-functions_nested_loops$ betty 0-holberton.c 
+
+========== 0-holberton.c ==========
+0-holberton.c:14: ERROR: code indent should use tabs where possible
+0-holberton.c:14: WARNING: please, no space before tabs
+0-holberton.c:14: WARNING: please, no spaces at the start of a line
+total: 1 errors, 2 warnings, 16 lines checked
+main
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x02-functions_nested_loops$ emacs 0-holberton.c
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x02-functions_nested_loops$ betty 0-holberton.c 
+
+========== 0-holberton.c ==========
+main
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x02-functions_nested_loops$ gcc 0-holberton.c
+0-holberton.c:10:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘int’
+ int main(void)
+ ^
+0-holberton.c:15:1: error: expected identifier or ‘(’ before ‘return’
+ return (0);
+ ^
+0-holberton.c:16:1: error: expected identifier or ‘(’ before ‘}’ token
+ }
+ ^
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x02-functions_nested_loops$ emacs 0-holberton.c
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x02-functions_nested_loops$ emacs 0-holberton.c
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x02-functions_nested_loops$ betty 0-holberton.c 
+
+========== 0-holberton.c ==========
+main
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x02-functions_nested_loops$ gcc 0-holberton.c
+0-holberton.c:10:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘int’
+ int main(void)
+ ^
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x02-functions_nested_loops$ gcc 0-holberton.c
+0-holberton.c:10:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘int’
+ int main(void)
+ ^
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x02-functions_nested_loops$ emacs 0-holberton.c
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x02-functions_nested_loops$ betty 0-holberton.c 
+
+========== 0-holberton.c ==========
+main
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x02-functions_nested_loops$ gcc 0-holberton.c
+0-holberton.c:10:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘int’
+ int main(void)
+ ^
+0-holberton.c:12:10: warning: character constant too long for its type [enabled by default]
+  putchar('Holberton\n');
+          ^
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x02-functions_nested_loops$ emacs 0-holberton.c
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x02-functions_nested_loops$ betty 0-holberton.c 
+
+========== 0-holberton.c ==========
+main
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x02-functions_nested_loops$ gcc 0-holberton.c
+0-holberton.c:10:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘int’
+ int main(void)
+ ^
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x02-functions_nested_loops$ emacs 0-holberton.c
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x02-functions_nested_loops$ betty 0-holberton.c 
+
+========== 0-holberton.c ==========
+main
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x02-functions_nested_loops$ gcc 0-holberton.c
+/tmp/ccOUGr8s.o: In function `main':
+0-holberton.c:(.text+0xf): undefined reference to `_putchar'
+0-holberton.c:(.text+0x1e): undefined reference to `_putchar'
+0-holberton.c:(.text+0x2d): undefined reference to `_putchar'
+0-holberton.c:(.text+0x3c): undefined reference to `_putchar'
+0-holberton.c:(.text+0x4b): undefined reference to `_putchar'
+/tmp/ccOUGr8s.o:0-holberton.c:(.text+0x5a): more undefined references to `_putchar' follow
+collect2: error: ld returned 1 exit status
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x02-functions_nested_loops$ emacs 0-holberton.c
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x02-functions_nested_loops$ betty 0-holberton.c 
+
+========== 0-holberton.c ==========
+main
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x02-functions_nested_loops$ gcc 0-holberton.c
+/tmp/ccDOzJH8.o: In function `main':
+0-holberton.c:(.text+0xf): undefined reference to `_putchar'
+0-holberton.c:(.text+0x1e): undefined reference to `_putchar'
+0-holberton.c:(.text+0x2d): undefined reference to `_putchar'
+0-holberton.c:(.text+0x3c): undefined reference to `_putchar'
+0-holberton.c:(.text+0x4b): undefined reference to `_putchar'
+/tmp/ccDOzJH8.o:0-holberton.c:(.text+0x5a): more undefined references to `_putchar' follow
+collect2: error: ld returned 1 exit status
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x02-functions_nested_loops$ emacs
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x02-functions_nested_loops$ emacs 0-holberton.c
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x02-functions_nested_loops$ betty 0-holberton.c 
+
+========== 0-holberton.c ==========
+main
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x02-functions_nested_loops$ gcc 0-holberton.c
+0-holberton.c:2:23: fatal error: holberton.h: No such file or directory
+ #include <holberton.h>
+                       ^
+compilation terminated.
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x02-functions_nested_loops$ emacs 0-holberton.c
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x02-functions_nested_loops$ ls
+0-holberton.c  0-holberton.c~  README.md
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x02-functions_nested_loops$ emacs holberton.h
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x02-functions_nested_loops$ emacs 0-holberton.c
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x02-functions_nested_loops$ betty 0-holberton.c 
+
+========== 0-holberton.c ==========
+main
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x02-functions_nested_loops$ gcc 0-holberton.c
+0-holberton.c:1:23: fatal error: holberton.h: No such file or directory
+ #include <holberton.h>
+                       ^
+compilation terminated.
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x02-functions_nested_loops$ ls
+0-holberton.c  0-holberton.c~  holberton.h  README.md
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x02-functions_nested_loops$ emacs 0-holberton.c
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x02-functions_nested_loops$ betty 0-holberton.c 
+
+========== 0-holberton.c ==========
+main
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x02-functions_nested_loops$ gcc 0-holberton.c
+0-holberton.c:8:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘int’
+ int main(void)
+ ^
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x02-functions_nested_loops$ emacs 0-holberton.c
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x02-functions_nested_loops$ gcc 0-holberton.c
+0-holberton.c:8:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘int’
+ int _putchar
+ ^
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x02-functions_nested_loops$ emacs 0-holberton.c
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x02-functions_nested_loops$ gcc 0-holberton.c
+0-holberton.c:8:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘int’
+ int main(void);
+ ^
+0-holberton.c:9:1: error: expected identifier or ‘(’ before ‘{’ token
+ {
+ ^
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x02-functions_nested_loops$ clear
+
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x02-functions_nested_loops$ gcc 0-holberton.c
+0-holberton.c:8:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘int’
+ int main(void);
+ ^
+0-holberton.c:9:1: error: expected identifier or ‘(’ before ‘{’ token
+ {
+ ^
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x02-functions_nested_loops$ emacs 0-holberton.c
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x02-functions_nested_loops$ gcc 0-holberton.c
+0-holberton.c:8:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘int’
+ int _putchar;
+ ^
+0-holberton.c:9:1: error: expected identifier or ‘(’ before ‘{’ token
+ {
+ ^
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x02-functions_nested_loops$ betty 0-holberton.c 
+
+========== 0-holberton.c ==========
+0-holberton.c:8: ERROR: global variables are not allowed
+total: 1 errors, 0 warnings, 20 lines checked
+0-holberton.c:8: error: cannot understand function prototype: 'int _putchar; '
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x02-functions_nested_loops$ emacs 0-holberton.c
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x02-functions_nested_loops$ betty 0-holberton.c 
+
+========== 0-holberton.c ==========
+main
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x02-functions_nested_loops$ gcc 0-holberton.c
+0-holberton.c:8:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘int’
+ int main(void);
+ ^
+0-holberton.c:9:1: error: expected identifier or ‘(’ before ‘{’ token
+ {
+ ^
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x02-functions_nested_loops$ emacs 0-holberton.c
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x02-functions_nested_loops$ betty 0-holberton.c
+
+========== 0-holberton.c ==========
+main
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x02-functions_nested_loops$ gcc 0-holberton.c
+0-holberton.c:8:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘int’
+ int main(void);
+ ^
+0-holberton.c:9:1: error: expected identifier or ‘(’ before ‘{’ token
+ {
+ ^
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x02-functions_nested_loops$ ls
+0-holberton.c  0-holberton.c~  holberton.h  README.md
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x02-functions_nested_loops$ 
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x02-functions_nested_loops$ clear
+
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x02-functions_nested_loops$ emacs 0-holberton.c
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x02-functions_nested_loops$ gcc 0-holberton.c
+0-holberton.c:8:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘int’
+ int main(_"putchar");
+ ^
+0-holberton.c:9:1: error: expected identifier or ‘(’ before ‘{’ token
+ {
+ ^
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x02-functions_nested_loops$ betty 0-holberton.c
+
+========== 0-holberton.c ==========
+0-holberton.c:7: warning: No description found for parameter or member '_"putchar"'
+main
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x02-functions_nested_loops$ emacs 0-holberton.c
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x02-functions_nested_loops$ emacs holberton.h 
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x02-functions_nested_loops$ ls
+0-holberton.c  0-holberton.c~  holberton.h  README.md
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x02-functions_nested_loops$ rm 0-holberton.c~
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x02-functions_nested_loops$ ls
+0-holberton.c  holberton.h  README.md
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x02-functions_nested_loops$ git add .
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x02-functions_nested_loops$ git commit -m "adding README and 0"
+[master 2299e6b] adding README and 0
+ 3 files changed, 34 insertions(+)
+ create mode 100644 0x02-functions_nested_loops/0-holberton.c
+ create mode 100644 0x02-functions_nested_loops/README.md
+ create mode 100644 0x02-functions_nested_loops/holberton.h
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x02-functions_nested_loops$ git push
+Counting objects: 7, done.
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (6/6), 712 bytes | 0 bytes/s, done.
+Total 6 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/bWF0bG9w/holbertonschool-low_level_programming.git
+   5dad7a8..2299e6b  master -> master
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x02-functions_nested_loops$ emacsemacs holberton.h 
+emacsemacs: command not found
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x02-functions_nested_loops$ emacs holberton.h 
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x02-functions_nested_loops$ ls
+0-holberton.c  holberton.h  README.md
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x02-functions_nested_loops$ betty 0-holberton.c 
+
+========== 0-holberton.c ==========
+main
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x02-functions_nested_loops$ gcc 0-holberton.c 
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x02-functions_nested_loops$ gcc -Wall -pedantic -Werror -Wextra _putchar.c 0-holberton.c -o 0-holberton
+gcc: error: _putchar.c: No such file or directory
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x02-functions_nested_loops$ ./0-holberton
+-bash: ./0-holberton: No such file or directory
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x02-functions_nested_loops$ emacs 0-holberton.c 
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x02-functions_nested_loops$ ls
+0-holberton.c  a.out  holberton.h  README.md
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x02-functions_nested_loops$ chmod u+x 0-holberton.c 
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x02-functions_nested_loops$ ls
+0-holberton.c  a.out  holberton.h  README.md
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x02-functions_nested_loops$ ./a.out
+Holberton
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x02-functions_nested_loops$ git add 0-holberton.c 
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x02-functions_nested_loops$ git commit -m "edits to 0"
+[master f32d053] edits to 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ mode change 100644 => 100755 0x02-functions_nested_loops/0-holberton.c
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x02-functions_nested_loops$ git push
+Counting objects: 5, done.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 290 bytes | 0 bytes/s, done.
+Total 3 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/bWF0bG9w/holbertonschool-low_level_programming.git
+   2299e6b..f32d053  master -> master
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x02-functions_nested_loops$ emacs 1-alphabet.c
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x02-functions_nested_loops$ betty 1-alphabet.c 
+
+========== 1-alphabet.c ==========
+main
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x02-functions_nested_loops$ gcc 1-alphabet.c 
+1-alphabet.c: In function ‘main’:
+1-alphabet.c:10:2: warning: passing argument 1 of ‘_putchar’ makes integer from pointer without a cast [enabled by default]
+  _putchar("a..z\n");
+  ^
+In file included from 1-alphabet.c:1:0:
+holberton.h:10:5: note: expected ‘char’ but argument is of type ‘char *’
+ int _putchar(char c)
+     ^
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x02-functions_nested_loops$ emacs 1-alphabet.c 
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x02-functions_nested_loops$ betty 1-alphabet.c 
+
+========== 1-alphabet.c ==========
+main
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x02-functions_nested_loops$ gcc 1-alphabet.c 
+1-alphabet.c: In function ‘main’:
+1-alphabet.c:10:7: error: expected identifier or ‘(’ before string constant
+  char("a..z\n");
+       ^
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x02-functions_nested_loops$ emacs 1-alphabet.c 
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x02-functions_nested_loops$ betty 1-alphabet.c 
+
+========== 1-alphabet.c ==========
+1-alphabet.c:9: error: cannot understand function prototype: 'int _putchar '
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x02-functions_nested_loops$ emacs 1-alphabet.c 
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x02-functions_nested_loops$ betty 1-alphabet.c 
+
+========== 1-alphabet.c ==========
+1-alphabet.c:8: warning: no description found for function _putchar
+1-alphabet.c:8: warning: No description found for parameter or member 'a'
+_putchar
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x02-functions_nested_loops$ emacs 1-alphabet.c 
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x02-functions_nested_loops$ betty 1-alphabet.c 
+
+========== 1-alphabet.c ==========
+main
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x02-functions_nested_loops$ gcc 0-holberton.c 
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x02-functions_nested_loops$ gcc 1-alphabet.c
+1-alphabet.c: In function ‘main’:
+1-alphabet.c:10:2: warning: passing argument 1 of ‘_putchar’ makes integer from pointer without a cast [enabled by default]
+  _putchar("a..z\n");
+  ^
+In file included from 1-alphabet.c:1:0:
+holberton.h:10:5: note: expected ‘char’ but argument is of type ‘char *’
+ int _putchar(char c)
+     ^
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x02-functions_nested_loops$ emacs holberton.h 
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x02-functions_nested_loops$ emacs holberton.h 
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x02-functions_nested_loops$ emacs 1-alphabet.c
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x02-functions_nested_loops$ betty 1-alphabet.c 
+
+========== 1-alphabet.c ==========
+1-alphabet.c:10: ERROR: global variables are not allowed
+1-alphabet.c:10: ERROR: space prohibited before open square bracket '['
+total: 2 errors, 0 warnings, 14 lines checked
+main
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x02-functions_nested_loops$ emacs 1-alphabet.c
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x02-functions_nested_loops$ emacs holberton.h 
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x02-functions_nested_loops$ emacs 1-alphabet.c
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x02-functions_nested_loops$ emacs holberton.h 
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x02-functions_nested_loops$ emacs 0-holberton.c 
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x02-functions_nested_loops$ betty 0-holberton.c 
+
+========== 0-holberton.c ==========
+main
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x02-functions_nested_loops$ emacs 0-holberton.c 
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x02-functions_nested_loops$ ls
+0-holberton.c  1-alphabet.c  1-alphabet.c~  a.out  holberton.h  README.md
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x02-functions_nested_loops$ rm 1-alphabet.c~
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x02-functions_nested_loops$ ls
+0-holberton.c  1-alphabet.c  a.out  holberton.h  README.md
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x02-functions_nested_loops$ emacs 1-alphabet.c 
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x02-functions_nested_loops$ betty 1-alphabet.c 
+
+========== 1-alphabet.c ==========
+print_alphabet
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x02-functions_nested_loops$ gcc 1-alphabet.c 
+In file included from 1-alphabet.c:1:0:
+holberton.h: In function ‘_putchar’:
+holberton.h:13:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+holberton.h:11:5: error: old-style parameter declarations in prototyped function definition
+ int _putchar(char c)
+     ^
+1-alphabet.c:11:2: warning: passing argument 1 of ‘_putchar’ makes integer from pointer without a cast [enabled by default]
+  _putchar("a..z");
+  ^
+In file included from 1-alphabet.c:1:0:
+holberton.h:11:5: note: expected ‘char’ but argument is of type ‘char *’
+ int _putchar(char c)
+     ^
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x02-functions_nested_loops$ emacs holberton.h 
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x02-functions_nested_loops$ emacs 1-alphabet.c 
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x02-functions_nested_loops$ gcc 1-alphabet.c
+In file included from 1-alphabet.c:1:0:
+holberton.h: In function ‘_putchar’:
+holberton.h:13:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+holberton.h:11:5: error: old-style parameter declarations in prototyped function definition
+ int _putchar(char c)
+     ^
+1-alphabet.c:11:11: warning: multi-character character constant [-Wmultichar]
+  _putchar('a..z');
+           ^
+1-alphabet.c:11:2: warning: overflow in implicit constant conversion [-Woverflow]
+  _putchar('a..z');
+  ^
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x02-functions_nested_loops$ emacs 1-alphabet.c
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x02-functions_nested_loops$ emacs holberton.h 
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x02-functions_nested_loops$ emacs 1-alphabet.c
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x02-functions_nested_loops$ ls
+0-holberton.c  1-alphabet.c  1-alphabet.c~  a.out  holberton.h  README.md
+vagrant@vagrant-ubuntu-trusty-64:~/holbertonschool-low_level_programming/0x02-functions_nested_loops$ emacs 0-holberton.c 
+
+File Edit Options Buffers Tools C Help                                          
+#include "holberton.h"
+
+/**                                                                             
+ *main - prints "Holberton"                                                     
+clear
+ *Return: 0                                                                     
+ */
+
+int main(void)
+{
+        _putchar('H');
+        _putchar('o');
+        _putchar('l');
+        _putchar('b');
+        _putchar('e');
+        _putchar('r');
+        _putchar('t');
+        _putchar('o');
+        _putchar('n');
+        _putchar('\n');
+        return (0);
+}
+-UU-:----F1  0-holberton.c   All L1    Git-master  (C/l WS Abbrev) -------------
+Loading vc-git...done
