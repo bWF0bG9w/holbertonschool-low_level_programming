@@ -1,10 +1,5 @@
 #include <unistd.h>
 
-/**
- *main - prints the alphabet in lowercase
- *Return: 0
- */
-
 int _putchar(char c)
 {
 	return (write(1, &c, 1));
@@ -19,7 +14,7 @@ int main(void)
 	{
 		if (c != 'e' && c != 'q')
 		{
-			_putchar(c);
+	_putchar(c);
 		}
 		c = c + 1;
 	}
