@@ -1,14 +1,9 @@
 #include <unistd.h>
 
 /**
- *main - prints the alphabet in lowercase
- *Return: 0
+ * main - prints the alphabet in lowercase
+ * Return: 0
  */
-
-int _putchar(char c)
-{
-	return (write(1, &c, 1));
-}
 
 int main(void)
 {
