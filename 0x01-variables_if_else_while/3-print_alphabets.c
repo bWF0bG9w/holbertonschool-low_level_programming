@@ -1,31 +1,23 @@
-#include <unistd.h>
+#include <stdio.h>
+#include <stdlib.h>
 
 /**
  *main - prints the alphabet in lowercase and then in uppercase
  *Return: 0
  */
 
-int _putchar(char c)
-{
-	return (write(1, &c, 1));
-}
 
 int main(void)
 {
-	char c;
+	int a;
 
-	c = 'a';
-	while (c <= 'z')
-	{
-		_putchar(c);
-		c = c + 1;
-	}
-	c = 'A';
-	while (c <= 'Z')
-	{
-		_putchar(c);
-		c = c + 1;
-	}
-	_putchar('\n');
+	for (a = 'a'; a < '{'; a++)
+		putchar(a);
+
+	for (a = 'A'; a < '['; a++)
+		putchar(a);
+
+	putchar('\n');
+
 	return (0);
 }
