@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <unistd.h>
 
 /**
  * main - prints alphabet
@@ -12,12 +13,11 @@ int main(void)
 {
 	int a;
 
-	for (a = 'a'; a < 'A'; a++
-		{
-			putchar(a);
-		}
+	for (a = 'a'; a < '{'; a++)
+	{
+		putchar(a);
+	}
+	putchar('\n');
 
-	     putchar('\n');
-
-	     return (0);
+	return (0);
 }
