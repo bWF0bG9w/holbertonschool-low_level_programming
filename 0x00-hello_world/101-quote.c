@@ -3,9 +3,9 @@
 #include <unistd.h>
 
 /**
+ * main - prints quote with new line to the std error
  *
- *
- *
+ * Return: 0
  */
 
 int main(void)
