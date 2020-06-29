@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <unistd.h>
 
 /**
  * main - print all combinations of 2 numbers
@@ -12,10 +13,10 @@ int main(void)
 	int a, b;
 	int c = 0;
 
-	for (a = '0'; a <= '9'; a++)
+	for (a = '0'; a <= ':'; a++)
 	{
 
-		for (b = '1' + c; b < '9'; b++)
+		for (b = '1' + c; b < ':'; b++)
 		{
 			if (a != b)
 			{
