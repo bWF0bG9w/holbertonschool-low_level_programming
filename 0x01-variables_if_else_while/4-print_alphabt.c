@@ -1,4 +1,5 @@
-#include <unistd.h>
+#include <stdio.h>
+#include <stdlib.h>
 
 /**
  * main - prints the alphabet in lowercase
@@ -14,10 +15,10 @@ int main(void)
 	{
 		if (c != 'e' && c != 'q')
 		{
-	_putchar(c);
+	putchar(c);
 		}
 		c = c + 1;
 	}
-	_putchar('\n');
+	putchar('\n');
 	return (0);
 }
