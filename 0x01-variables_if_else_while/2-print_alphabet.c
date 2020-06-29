@@ -1,9 +1,12 @@
-#include <unistd.h>
+#include <stdio.h>
+#include <stdlib.h>
 
-int _putchar(char c)
-{
-	return (write(1, &c, 1));
-}
+/**
+ * main - prints alphabet
+ *
+ * Return: 0
+ */
+
 
 int main(void)
 {
