@@ -3,8 +3,8 @@
 
 /**
  * main - prints minimum number of coins to make change for an amount of money
- * @argv: argument
- * @argc: arrays
+ * @argc: argument count
+ * @argv: arrays
  *
  * Return: number of coins
  */
@@ -13,7 +13,9 @@ int main(int argc, char *argv[])
 {
 	int coins = 0;
 
-	int sum = argv[1];
+	int sum = *argv[1];
+
+	argc = argc;
 
 	coins += sum / 25;
 	sum %= 25;
