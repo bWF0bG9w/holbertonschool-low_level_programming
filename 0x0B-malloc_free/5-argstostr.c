@@ -12,10 +12,10 @@
 char *argstostr(int ac, char **av)
 {
 	int a, b;
-	int len =0, k = 0;
+	int k = 0, len = 0;
 	char *cat;
 
-	if (ac <= 0 || av == NULL)
+	if (ac == 0 || av == NULL)
 		return (NULL);
 
 	for (a = 0; a < ac; a++)
