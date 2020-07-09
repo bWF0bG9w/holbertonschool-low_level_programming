@@ -32,15 +32,11 @@ char *argstostr(int ac, char **av)
 
 	for (a = 0; a < ac; a++)
 	{
-		while (av[a][b] != 0)
+		for (b = 0; av[a][b] != '\0'; b++)
 		{
-			cat[k] = av[a][b];
-			k++;
-			b++;
+			cat[k++] = av[a][b];
 		}
-		cat[k] = '\n';
-		k++;
-		b = 0;
+		cat[k++] = '\n';
 	}
 	cat[k] = '\0';
 	return (cat);
