@@ -1,5 +1,5 @@
-#ifndef OBJECT_LIKE_MACRO
-#define OBJECT_LIKE_MACRO
+#ifndef FUN_LIKE_MACRO
+#define FUN_LIKE_MACRO
 
 #define ABS(x) ((x) < 0 ? ((x) * (-1)) : (x))
 
