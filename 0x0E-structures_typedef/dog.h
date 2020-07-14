@@ -1,6 +1,13 @@
 #ifndef HEADER
 #define HEADER dog.h
 
+/**
+ * struct dog - new struct dog with name, age, and owner
+ * @name: name of dog
+ * @age: age of dog
+ * @owner: owner of dog
+ */
+
 struct dog
 {
 	char *name;
