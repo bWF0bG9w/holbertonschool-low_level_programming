@@ -35,14 +35,14 @@ void printi(va_list anything, char *s)
 
 void print_f(va_list anything, char *s)
 {
-	printf("%s%f", s, va_arg(anything, int));
+	printf("%s%f", s, va_arg(anything, double));
 }
 
 /**
- * prints - prints a string
+ * print_s - prints a string
  * @anything: string
  * @s: pointer
- *
+ * Return: nothing
  */
 
 void print_s(va_list anything, char *s)
@@ -73,4 +73,22 @@ void print_all(const char * const format, ...)
 		       {'i', printi},
 		       {'f', print_f},
 		       {'s', print_s},
+		       {NULL, NULL},
 	};
+
+	a = 0;
+	b = 0;
+
+	while (b <= format)
+	{
+		while (a <= 3)
+		{
+			if (array[a].s == (*format))
+			{
+				return (array[a].f);
+			}
+			a++;
+		}
+		b++;
+	}
+}
